@@ -1,0 +1,216 @@
+/* ===== RESET & DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #faf7f2;
+    color: #3b2a1a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER & NAV ===== */
+.main-header {
+    background-color: #3b2a1a;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: #e8c9a0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: #c68b4e;
+    color: #fff;
+}
+
+/* ===== HERO ===== */
+/* Background hero sekarang diatur langsung dari file HTML (inline style) agar gambar dijamin muncul */
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #c68b4e;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a06a34;
+}
+
+/* ===== PROFIL ===== */
+.profil {
+    padding: 60px 20px;
+}
+
+.profil h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #3b2a1a;
+}
+
+.profil-flex {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profil-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profil-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.profil-text h3 {
+    margin-top: 15px;
+    color: #c68b4e;
+}
+
+.profil-text ul {
+    margin-left: 20px;
+}
+
+/* ===== TABEL ===== */
+.judul-halaman {
+    text-align: center;
+    margin: 40px 0 10px;
+    color: #3b2a1a;
+}
+
+.tabel-menu {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0 60px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabel-menu th {
+    background-color: #3b2a1a;
+    color: #e8c9a0;
+    padding: 14px;
+    text-align: left;
+}
+
+.tabel-menu td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabel-menu tbody tr:hover {
+    background-color: #f5e9d8;
+}
+
+/* ===== KONTAK ===== */
+.kontak-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px 0 60px;
+}
+
+.kontak-info p {
+    margin: 10px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #3b2a1a;
+    color: #e8c9a0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .profil-flex {
+        flex-direction: column;
+    }
+}
